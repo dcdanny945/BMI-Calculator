@@ -1,0 +1,21 @@
+function bmiCalculator (kg, meter) {
+    let bmi= Math.round(kg / (meter*meter));
+    let output="";
+    if (bmi<18.5){
+        output="Your BMI is "+bmi+", so you are underweight.";
+    }
+    else if(bmi>=18.5 && bmi<=24.9){
+        output="Your BMI is "+yourbmi+", so you have a normal weight.";
+    }
+    else{
+        output="Your BMI is "+yourbmi+", so you are overweight.";
+    }
+
+    
+    return output;
+}
+
+    
+
+
+bmiCalculator(76,1.78)
